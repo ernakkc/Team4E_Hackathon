@@ -56,12 +56,6 @@ Bunların tamamı `dataProcess.py` dosyasında yönetilir.
 
 ### 📊 Veri Analizi Modülleri
 
-Özellik
-
-Açıklama
-
-Dosya
-
 **Eşik Üstü Ülkeler**
 
 Belirli bir CO₂ değeri üzerindeki ülkeleri listeler
@@ -126,6 +120,8 @@ Tam kapsamlı analiz raporu üretir
 ---------------
 
 Program, kullanıcı dostu bir **menü sistemi** ile çalışır. Kullanıcılar menüden istediği işlemi seçerek analizleri başlatabilir.
+
+![Menü Görseli](img/menu.png)
 
 📘 Örnek Kullanım
 -----------------
