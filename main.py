@@ -2,7 +2,7 @@ import csv
 from utils.logger import Logger
 from utils.year_to_comparison import emission_difference
 from utils.menu import printMenu, clearScreen, goodbye, wait_for_user
-from utils.country_comparison import countries_within_emission_range
+from utils.country_comparison import compare_two_countries
 from utils.countries_with_emissions_in_a_certain_range import countries_within_emission_range_emission
 from utils.countries_above_threshold import countries_above_threshold
 from utils.dataProcess import addData, listData, deleteData, updateData
@@ -52,7 +52,7 @@ class Main:
     
     def reload_data(self):
         self.data = {}
-        self.load_data()
+        self.data = self.load_data()
         self.logger.success("Data reloaded successfully")
         return self.data
         
@@ -88,7 +88,7 @@ class Main:
                 countries_above_threshold(CO2_PATH)
                 wait_for_user()
             elif choice == "6":
-                countries_within_emission_range(CO2_PATH)
+                compare_two_countries(CO2_PATH)
                 wait_for_user()
             elif choice == "7":
                 countries_within_emission_range_emission(CO2_PATH)
