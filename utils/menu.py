@@ -60,7 +60,8 @@ def printMenu():
         print(color + Style.BRIGHT + opt)
 
     print(Fore.CYAN + "=" * width)
-    choice = input(Fore.WHITE + Style.BRIGHT + center_text("📌 Enter your choice (1-15): ", width))
+    print(Fore.WHITE + Style.BRIGHT + center_text("📌 Enter your choice (1-15): ", width))
+    choice = input("--> ")
     return choice
 
 def goodbye():
