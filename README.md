@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CO₂ Emissions Data Analysis Tool - Team4E</title>
   <style>
     body {
@@ -41,12 +41,12 @@
 </head>
 <body>
 
-  <h1>🌍 CO₂ Emissions Data Analysis Tool</h1>
-  <p><strong>Team4E Hackathon Projesi</strong></p>
-  <p>
-    Bu proje, ülkelerin yıllara göre <strong>karbondioksit (CO₂)</strong> salım verilerini analiz etmeyi amaçlayan konsol tabanlı bir analiz aracıdır.
-    CSV dosyalarından alınan verilerle çeşitli karşılaştırmalar, trend analizleri ve raporlar oluşturabilir, sonuçları grafiksel olarak görüntüleyebilirsiniz.
-  </p>
+<h1>🌍 CO₂ Emissions Data Analysis Tool</h1>
+<h2>Team4E Hackathon Projesi</h2>
+
+<p>Bu proje, ülkelerin yıllara göre karbondioksit (CO₂) salım verilerini analiz etmeyi amaçlayan konsol tabanlı bir analiz aracıdır. 
+CSV dosyalarından alınan verilerle çeşitli karşılaştırmalar, trend analizleri ve raporlar oluşturabilir, sonuçları grafiksel olarak görüntüleyebilirsiniz.</p>
+
 
   <h2>📁 Klasör Yapısı</h2>
   <pre><code>project/
