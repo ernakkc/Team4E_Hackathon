@@ -16,8 +16,7 @@ class Main:
             'country': {
                 'code': 'country_code',
                 'year': {
-                    'co2': 0,
-                    'population': 0
+                    'co2': 0
                 }
             }
         }
@@ -33,30 +32,22 @@ class Main:
                 if country not in data:
                     data[country] = {'code': code, 'year': {}}
                 if year not in data[country]['year']:
-                    data[country]['year'][year] = {'co2': co2, 'population': 0}
+                    data[country]['year'][year] = co2
                 else:
-                    data[country]['year'][year]['co2'] += co2
-        with open(POPULATION_PATH, 'rt', encoding='utf-8') as f:
-            reader = csv.reader(f)
-            next(reader)
-            for row in reader:
-                country = row[0]
-                code = row[1]
-                year = int(row[2])
-                population = int(row[3])
-                if country not in data:
-                    data[country] = {'code': code, 'year': {}}
-                if year not in data[country]['year']:
-                    data[country]['year'][year] = {'co2': 0, 'population': population}
-                else:
-                    data[country]['year'][year]['population'] += population
-        
+                    data[country]['year'][year] += co2
+                    
         self.logger.success("Data loaded successfully")
         return data
     
+    def reload_data(self):
+        self.data = {}
+        self.load_data()
+        self.logger.success("Data reloaded successfully")
+        return self.data
+        
     def run(self):
         self.data = self.load_data()
-    
+        print(self.data)
 
 if __name__ == "__main__":
     app = Main()
