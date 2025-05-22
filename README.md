@@ -1,4 +1,4 @@
-🌍 CO₂ Emissions Data Analysis Tool
+🌍 CO₂ Emissions Data Analysis Tool 
 ===================================
 
 KTÜ Software Engineering Hackathon Projesi
